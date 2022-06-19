@@ -15,12 +15,12 @@ const AddDataModal = (props: AddDataModalProps) => {
   const { control, handleSubmit, getValues } = useForm<FieldValues>({
     defaultValues: {
       name: "",
-      temprature: "",
-      turbidity: "",
-      solid: "",
+      attendance: "",
+      age: "",
+      salary: "",
       distance: "",
-      terrain: "",
-      debit: "",
+      gpa: "",
+      psychotest: "",
     },
   });
 
@@ -28,12 +28,12 @@ const AddDataModal = (props: AddDataModalProps) => {
     const body = getValues();
     pushData({
       name: body.name,
-      temprature: +body.temprature,
-      turbidity: +body.turbidity,
-      solid: +body.solid,
+      attendance: +body.attendance,
+      age: +body.age,
+      salary: +body.salary,
       distance: +body.distance,
-      terrain: +body.terrain,
-      debit: +body.debit,
+      gpa: +body.gpa,
+      psychotest: +body.psychotest,
     });
     props.onClose();
   };
@@ -71,15 +71,15 @@ const AddDataModal = (props: AddDataModalProps) => {
           <VStack spacing="4" alignItems="unset">
             <TextField
               control={control}
-              name="temprature"
-              label="temprature"
+              name="attendance"
+              label="attendance"
               type="number"
               rules={{ required: true }}
             />
             <TextField
               control={control}
-              name="turbidity"
-              label="turbidity"
+              name="age"
+              label="age"
               type="number"
               rules={{ required: true }}
             />
@@ -87,8 +87,8 @@ const AddDataModal = (props: AddDataModalProps) => {
           <VStack spacing="4" alignItems="unset">
             <TextField
               control={control}
-              name="solid"
-              label="solid"
+              name="salary"
+              label="salary"
               type="number"
               rules={{ required: true }}
             />
@@ -103,15 +103,15 @@ const AddDataModal = (props: AddDataModalProps) => {
           <VStack spacing="4" alignItems="unset">
             <TextField
               control={control}
-              name="terrain"
-              label="terrain"
+              name="gpa"
+              label="gpa"
               type="number"
               rules={{ required: true }}
             />
             <TextField
               control={control}
-              name="debit"
-              label="debit"
+              name="psychotest"
+              label="psychotest"
               type="number"
               rules={{ required: true }}
             />

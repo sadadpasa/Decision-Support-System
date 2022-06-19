@@ -45,18 +45,18 @@ const normalizeDataColumns: ReadonlyArray<Column<River & { valueS: number }>> =
       width: "20%",
     },
     {
-      Header: "Temprature",
-      accessor: "temprature",
+      Header: "attendance",
+      accessor: "attendance",
       width: "17.5%",
     },
     {
-      Header: "Turbidity",
-      accessor: "turbidity",
+      Header: "age",
+      accessor: "age",
       width: "17.5%",
     },
     {
-      Header: "Solid",
-      accessor: "solid",
+      Header: "salary",
+      accessor: "salary",
       width: "17.5%",
     },
     {
@@ -65,13 +65,13 @@ const normalizeDataColumns: ReadonlyArray<Column<River & { valueS: number }>> =
       width: "17.5%",
     },
     {
-      Header: "Terrain",
-      accessor: "terrain",
+      Header: "gpa",
+      accessor: "gpa",
       width: "17.5%",
     },
     {
-      Header: "Debit",
-      accessor: "debit",
+      Header: "psychotest",
+      accessor: "psychotest",
       width: "17.5%",
     },
     {

@@ -57,15 +57,15 @@ const useWeightProduct = () => {
     // Mencari nilai S ternormalisasi
     const newNormalizeData = dataset.map((item) => {
       const criteria: Record<string, number> = {
-        temprature: Math.pow(
-          item.temprature,
-          normalizeDataObj.temprature.value
+        attendance: Math.pow(
+          item.attendance,
+          normalizeDataObj.attendance.value
         ),
-        turbidity: Math.pow(item.turbidity, normalizeDataObj.turbidity.value),
-        solid: Math.pow(item.solid, normalizeDataObj.solid.value),
+        age: Math.pow(item.age, normalizeDataObj.age.value),
+        salary: Math.pow(item.salary, normalizeDataObj.salary.value),
         distance: Math.pow(item.distance, normalizeDataObj.distance.value),
-        terrain: Math.pow(item.terrain, normalizeDataObj.terrain.value),
-        debit: Math.pow(item.debit, normalizeDataObj.debit.value),
+        gpa: Math.pow(item.gpa, normalizeDataObj.gpa.value),
+        psychotest: Math.pow(item.psychotest, normalizeDataObj.psychotest.value),
       };
       return {
         ...item,

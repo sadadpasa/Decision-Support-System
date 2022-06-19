@@ -5,17 +5,17 @@ enum attribute {
 
 const criteriaWP = [
   {
-    criteria: "temprature",
+    criteria: "attendance",
     attribute: attribute.COST,
     weight: 2,
   },
   {
-    criteria: "turbidity",
+    criteria: "age",
     attribute: attribute.COST,
     weight: 3,
   },
   {
-    criteria: "solid",
+    criteria: "salary",
     attribute: attribute.COST,
     weight: 4,
   },
@@ -25,12 +25,12 @@ const criteriaWP = [
     weight: 3,
   },
   {
-    criteria: "terrain",
+    criteria: "gpa",
     attribute: attribute.COST,
     weight: 3,
   },
   {
-    criteria: "debit",
+    criteria: "psychotest",
     attribute: attribute.BENEFIT,
     weight: 2,
   },
