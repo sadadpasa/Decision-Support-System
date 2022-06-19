@@ -1,0 +1,35 @@
+{
+  "name": "tirtawater",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.6",
+    "@emotion/react": "11",
+    "@emotion/styled": "11",
+    "@types/react-table": "^7.7.9",
+    "axios": "^0.27.2",
+    "framer-motion": "6",
+    "mongoose": "^6.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.27.1",
+    "react-icons": "^4.3.1",
+    "react-location": "^3.3.4",
+    "react-table": "^7.7.0",
+    "vite-tsconfig-paths": "^3.4.1",
+    "zustand": "^3.7.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.10",
+    "@types/react-icons": "^3.0.0",
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}
