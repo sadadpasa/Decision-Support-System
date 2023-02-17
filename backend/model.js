@@ -5,15 +5,15 @@ const Schema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  temperature: {
+  attendance: {
     type: Number,
     required: true,
   },
-  turbidity: {
+  age: {
     type: Number,
     required: true,
   },
-  solid: {
+  salary: {
     type: Number,
     required: false,
   },
@@ -21,11 +21,11 @@ const Schema = new mongoose.Schema({
     type: Number,
     required: false,
   },
-  terrain: {
+  gpa: {
     type: Number,
     required: false,
   },
-  debit: {
+  psychotest: {
     type: Number,
     required: false,
   },
